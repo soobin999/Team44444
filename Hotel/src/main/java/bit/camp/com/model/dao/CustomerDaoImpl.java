@@ -4,7 +4,9 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import bit.camp.com.model.VO.mybatis.Customer;
 
@@ -56,11 +58,19 @@ public class CustomerDaoImpl implements CustomerDao {
 	
 	///////////////////////////////////////////////////////////////////////////////////////////////////
 	
-	@Inject SqlSession sql; 
-
+	
+	@Autowired SqlSession sql; 
 	@Override
-	public void CustomerModify(Customer customerVo) throws Exception {
-		// VO에 담긴 파라피터를 CustomerMapper.xml의 CustomerModify의 쿼리에 넣어줌
+	public void customerMypage(Customer customerVo) throws Exception {
+	
+		sql.selectList("CustomerMapper.CustomerMypage", customerVo );
+		
+	}
+	
+	
+	@Override
+	public void customerModify(Customer customerVo) throws Exception {
+		// VO에 담긴 파라피터를 CustomerMapper.xml의 customerModify의 쿼리에 넣어줌
 		sql.update("CustomerMapper.CustomerModify", customerVo);
 		
 	}

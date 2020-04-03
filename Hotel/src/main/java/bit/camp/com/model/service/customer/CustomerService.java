@@ -19,9 +19,9 @@ public interface CustomerService {
 	/////////////////////////////////////////////////////////////////////////////////////////////////
 
 	// 회원정보
-	public void CustomerModifyUpdate(Customer customerVo) throws Exception;
+	public void customerModifyUpdate(Customer customerVo) throws Exception;
 
 	// 회원정보 수정
-	public void CustomerModify(Customer customerVo) throws Exception;
+	public void customerModify(Customer customerVo) throws Exception;
 
 }

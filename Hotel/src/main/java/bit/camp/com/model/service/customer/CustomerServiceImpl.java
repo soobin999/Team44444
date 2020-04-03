@@ -69,18 +69,18 @@ public class CustomerServiceImpl implements CustomerService {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 회원정보
 	@Override
-	public void CustomerModifyUpdate(Customer customerVo) throws Exception {
+	public void customerModifyUpdate(Customer customerVo) throws Exception {
           // 받은 VO를 DAO로 보냄
-		customerDao.CustomerModify(customerVo);
-
+		customerDao.customerModify(customerVo);
 	}
+	
 
 // 회원정보수정
 	@Override
-	public void CustomerModify(Customer customerVo) throws Exception {
+	public void customerModify(Customer customerVo) throws Exception {
 
 // 받은 VO를 DAO로 보냄
-		customerDao.CustomerModify(customerVo);
+		customerDao.customerModify(customerVo);
 
 	}
 

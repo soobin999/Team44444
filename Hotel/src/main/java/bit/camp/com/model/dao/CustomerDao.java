@@ -21,8 +21,11 @@ public interface CustomerDao {
 	
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
+	//회원 마이페이지
+	public void customerMypage(Customer customerVo) throws Exception;
+	
 	//회원정보 수정
-	public void CustomerModify(Customer customerVo) throws Exception ;
+	public void customerModify(Customer customerVo) throws Exception ;
 
 	
 }

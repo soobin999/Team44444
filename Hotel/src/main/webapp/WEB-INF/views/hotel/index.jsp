@@ -184,33 +184,29 @@
 				<div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
 					<div class="booking-form">
 						<h3>Booking Your Hotel</h3>
-						<form action="#">
-							<div class="check-date">
-								<label for="date-in">Check In:</label> <input type="text"
-									class="date-input" id="date-in"> <i
-									class="icon_calendar"></i>
-							</div>
-							<div class="check-date">
-								<label for="date-out">Check Out:</label> <input type="text"
-									class="date-input" id="date-out"> <i
-									class="icon_calendar"></i>
-							</div>
-							<div class="select-option">
-								<label for="guest">Guests:</label> <select id="guest">
-									<option value="">1 Adults</option>
-									<option value="">2 Adults</option>
-									<option value="">3 Adults</option>
-									<option value="">4 Adults</option>
-								</select>
-							</div>
-							<div class="select-option">
-								<label for="room">Room:</label> <select id="room">
-									<option value="">1 Room</option>
-									<option value="">2 Room</option>
-								</select>
-							</div>
-							<button type="submit">Check Availability</button>
-						</form>
+						 <form action="search">
+                            <div class="check-date">
+                                <label for="date-in">Check In:</label>
+                                <input type="date" name="reservationStartDate">
+                                <i class="icon_calendar"></i>
+                            </div>
+                            <div class="check-date">
+                                <label for="date-out">Check Out:</label>
+                                <input type="date" name="reservationFinishDate">
+                                <i class="icon_calendar"></i>
+                            </div>
+                            <div class="select-option">
+                                <label for="guest">Guests:</label>
+                                <select id="guest" name="roomPerson">
+                                    <option value="2">2 Adults</option>
+                                    <option value="3">3 Adults</option>
+                                    <option value="4">4 Adults</option>
+                                    <option value="6">6 Adults</option>
+                                    <option value="10">10 Adults</option>
+                                </select>
+                            </div>
+                            <button type="submit">Check Availability</button>
+                        </form>
 					</div>
 				</div>
 			</div>

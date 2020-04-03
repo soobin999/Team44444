@@ -51,11 +51,9 @@
 	</delete>
 
 
-
-
 	<!-- ///////////////////////////////////////////////////////////////////////// -->
-	<!-- 회원정보 가져오기 -->
-	<select id="selectMyInfo">
+	<!-- 회원 Mypage -->
+	<select id="CustomerMypage" resultType="customer">
 		select customerID, customerPW, customerName,
 		SSNumber, customerPhoneNumber
 		from hotel.customer
