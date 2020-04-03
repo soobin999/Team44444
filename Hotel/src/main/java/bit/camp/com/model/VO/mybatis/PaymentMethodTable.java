@@ -3,6 +3,7 @@ package bit.camp.com.model.VO.mybatis;
 import java.sql.Date;
 
 import org.apache.ibatis.type.Alias;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -20,17 +21,20 @@ public class PaymentMethodTable {
 	
 	private String paymentMethod,imp_uid,merchant_uid;
 	private Date reservationDate;
-	private int reservationCount;
 	
 	public PaymentMethodTable() {
 		super();
 	}
-	public PaymentMethodTable(String paymentMethod,String imp_uid,String merchant_uid,Date reservationDate,int reservationCount) {
+	public PaymentMethodTable(String paymentMethod,String imp_uid,String merchant_uid,Date reservationDate) {
 		super();
 		this.paymentMethod=paymentMethod;
 		this.imp_uid=imp_uid;
 		this.merchant_uid=merchant_uid;
 		this.reservationDate=reservationDate;
-		this.reservationCount=reservationCount;
+	}
+	@Autowired(required = false)
+	private Reservation reservation;
+	public PaymentMethodTable(Reservation reservation) {
+		this.reservation=reservation;
 	}
 }

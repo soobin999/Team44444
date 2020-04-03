@@ -19,18 +19,19 @@ public class Reservation {
 	public Reservation getReservation() {
 		return new Reservation();
 	}
-	
+	private int reservationCount;
 	private Date reservationStartDate,reservationFinishDate;
 	private int totalAmount, editRoute,editCode;
 
 	public Reservation() {}
-	public Reservation(Date reservationStartDate,Date reservationFinishDate,int totalAmount,int editRoute,int editCode) {
+	public Reservation(int reservationCount,Date reservationStartDate,Date reservationFinishDate,int totalAmount,int editRoute,int editCode) {
 		super();
 		this.reservationStartDate=reservationStartDate;
 		this.reservationFinishDate=reservationFinishDate;
 		this.totalAmount=totalAmount;
 		this.editRoute=editRoute;
 		this.editCode=editCode;
+		this.reservationCount=reservationCount;
 	}
 	@Autowired(required = false)
 	private Customer customer;
