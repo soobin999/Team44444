@@ -27,7 +27,7 @@ public class CustomerModifyController {
 	@RequestMapping(value="/customermodifyupdate", method = RequestMethod.POST)
 	public String custoemrModifyUpdate(Customer customerVo, HttpSession session) throws Exception{
 		
-		service.CustomerModifyUpdate(customerVo);
+		service.customerModify(customerVo);
 		
 		session.invalidate();
 		

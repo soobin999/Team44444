@@ -5,11 +5,11 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Sona Template">
-<meta name="keywords" content="Sona, unica, creative, html">
+<meta name="description" content="BitHotel Template">
+<meta name="keywords" content="BitHotel, unica, creative, html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>BitHotelRooms</title>
+<title>BitHotel</title>
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 <!-- Google Font -->
 <link
@@ -20,6 +20,7 @@
 	rel="stylesheet">
 <script src="https://kit.fontawesome.com/a90534caa2.js"
 	crossorigin="anonymous"></script>
+
 <!-- Css Styles -->
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css"
@@ -68,10 +69,11 @@
 		<div class="canvas-close">
 			<i class="icon_close"></i>
 		</div>
-		<div class="search-icon search-switch">
-			<i class="icon_search"></i>
+		<div class="search-icon  search-switch">
+			<i class="fas fa-search"></i>
 		</div>
 		<div class="header-configure-area">
+
 			<a href="#" class="bk-btn">Booking Now</a>
 		</div>
 		<nav class="mainmenu mobile-menu">
@@ -120,9 +122,9 @@
 									});
 								}
 							</script>
-							<a href="/roomReservation" class="bk-btn">Booking Now</a> <a href="/login"
-								class="bk-btn" id="sign up">회원가입</a> <a href="/signUp" class="bk-btn"
-								id="login">로그인</a>
+							<a href="/roomReservation" class="bk-btn">Booking Now</a> <a
+								href="/login" class="bk-btn" id="sign up">회원가입</a> <a
+								href="/signUp" class="bk-btn" id="login">로그인</a>
 						</div>
 					</div>
 				</div>
@@ -151,6 +153,7 @@
 											<li><a href="/reservationConfirm">예약확인</a></li>
 											<li><a href="/customerModify">개인정보수정</a></li>
 										</ul></li>
+
 								</ul>
 							</nav>
 							<div class="nav-right search-switch">
@@ -163,197 +166,35 @@
 		</div>
 	</header>
 	<!-- Header End -->
-
-	<!-- Breadcrumb Section Begin -->
-	<div class="breadcrumb-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="breadcrumb-text">
-						<h2>Our Rooms</h2>
-						<div class="bt-option">
-							<a href="/home">Home</a> <span>Rooms</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<!-- 여기에 사이에 만들면 됩니다. -->
+	
+	
+	<div class="mypage title" style="margin: 100px 20px 10px 380px;">
+		<style></style>
+		<span class="kt-portlet__head-icon"> </span>
+		<h3 class="kt-portlet__head-title">My page</h3>
 	</div>
-	<!-- Breadcrumb Section End -->
 
-	<!-- Rooms Section Begin -->
-	<section class="rooms-section spad">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="room-item">
-						<img
-							src="${pageContext.request.contextPath}/resources/img/room/room-1.jpg"
-							alt="">
-						<div class="ri-text">
-							<h4>Family Room</h4>
-							<h3>
-								200$<span>/Pernight</span>
-							</h3>
-							<table>
-								<tbody>
-									<tr>
-										<td class="r-o">Size:</td>
-										<td>30 ft</td>
-									</tr>
-									<tr>
-										<td class="r-o">Capacity:</td>
-										<td>Max persion 3</td>
-									</tr>
-									<tr>
-										<td class="r-o">Bed:</td>
-										<td>King Beds</td>
-									</tr>
-									<tr>
-										<td class="r-o">Services:</td>
-										<td>Wifi, Television, Bathroom,...</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="room-item">
-						<img
-							src="${pageContext.request.contextPath}/resources/img/room/room-2.jpg"
-							alt="">
-						<div class="ri-text">
-							<h4>Standard</h4>
-							<h3>
-								80$<span>/Pernight</span>
-							</h3>
-							<table>
-								<tbody>
-									<tr>
-										<td class="r-o">Size:</td>
-										<td>30 ft</td>
-									</tr>
-									<tr>
-										<td class="r-o">Capacity:</td>
-										<td>Max persion 5</td>
-									</tr>
-									<tr>
-										<td class="r-o">Bed:</td>
-										<td>King Beds</td>
-									</tr>
-									<tr>
-										<td class="r-o">Services:</td>
-										<td>Wifi, Television, Bathroom,...</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="room-item">
-						<img
-							src="${pageContext.request.contextPath}/resources/img/room/room-3.jpg"
-							alt="">
-						<div class="ri-text">
-							<h4>Double bed</h4>
-							<h3>
-								100$<span>/Pernight</span>
-							</h3>
-							<table>
-								<tbody>
-									<tr>
-										<td class="r-o">Size:</td>
-										<td>30 ft</td>
-									</tr>
-									<tr>
-										<td class="r-o">Capacity:</td>
-										<td>Max persion 2</td>
-									</tr>
-									<tr>
-										<td class="r-o">Bed:</td>
-										<td>King Beds</td>
-									</tr>
-									<tr>
-										<td class="r-o">Services:</td>
-										<td>Wifi, Television, Bathroom,...</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="room-item">
-						<img
-							src="${pageContext.request.contextPath}/resources/img/room/room-4.jpg"
-							alt="">
-						<div class="ri-text">
-							<h4>Premium</h4>
-							<h3>
-								120$<span>/Pernight</span>
-							</h3>
-							<table>
-								<tbody>
-									<tr>
-										<td class="r-o">Size:</td>
-										<td>30 ft</td>
-									</tr>
-									<tr>
-										<td class="r-o">Capacity:</td>
-										<td>Max persion 1</td>
-									</tr>
-									<tr>
-										<td class="r-o">Bed:</td>
-										<td>King Beds</td>
-									</tr>
-									<tr>
-										<td class="r-o">Services:</td>
-										<td>Wifi, Television, Bathroom,...</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="room-item">
-						<img
-							src="${pageContext.request.contextPath}/resources/img/room/room-5.jpg"
-							alt="">
-						<div class="ri-text">
-							<h4>Suite Room</h4>
-							<h3>
-								150$<span>/Pernight</span>
-							</h3>
-							<table>
-								<tbody>
-									<tr>
-										<td class="r-o">Size:</td>
-										<td>30 ft</td>
-									</tr>
-									<tr>
-										<td class="r-o">Capacity:</td>
-										<td>Max persion 1</td>
-									</tr>
-									<tr>
-										<td class="r-o">Bed:</td>
-										<td>King Beds</td>
-									</tr>
-									<tr>
-										<td class="r-o">Services:</td>
-										<td>Wifi, Television, Bathroom,...</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
+	<div class="mypage-id" style="margin: 50px 20px 5px 380px;">
+		<label style="font-weight: bold;">아이디: </label> ${Customer.customerID}
+	</div>
+	<div class="mypage-name" style="margin: 10px 20px 5px 380px;">
+		<label style="font-weight: bold;">성함: </label>
+		${Customer.customerName}
+	</div>
+	<div class="row kt-margin-b-20">
+		<div class="mypage-phone" style="margin: 10px 20px 200px 380px;">
+			<label style="font-weight: bold;">핸드폰번호: </label>
+			${Customer.customerPhoneNumber}
 		</div>
-	</section>
-	<!-- Rooms Section End -->
+
+	</div>
+
+
+
+
+
+	<!-- 여기에 사이에 만들면 됩니다. -->
 
 	<!-- Footer Section Begin -->
 	<footer class="footer-section">
@@ -372,6 +213,7 @@
 								We inspire and reach millions of travelers<br /> across 90
 								local websites
 							</p>
+
 						</div>
 					</div>
 					<div class="col-lg-3 offset-lg-1">

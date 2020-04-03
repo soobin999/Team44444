@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import bit.camp.com.model.VO.mybatis.Customer;
 import bit.camp.com.model.dao.CustomerDao;
 
-
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
@@ -68,21 +67,20 @@ public class CustomerServiceImpl implements CustomerService {
 	}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// 회원정보
+// 회원정보
 	@Override
-	public void CustomerModifyUpdate(Customer customerVo) throws Exception {
-
-		// 받은 VO를 DAO로 보냄
-		customerDao.CustomerModify(customerVo);
-
+	public void customerModifyUpdate(Customer customerVo) throws Exception {
+          // 받은 VO를 DAO로 보냄
+		customerDao.customerModify(customerVo);
 	}
+	
 
-	// 회원정보수정
+// 회원정보수정
 	@Override
-	public void CustomerModify(Customer customerVo) throws Exception {
+	public void customerModify(Customer customerVo) throws Exception {
 
-		// 받은 VO를 DAO로 보냄
-		customerDao.CustomerModify(customerVo);
+// 받은 VO를 DAO로 보냄
+		customerDao.customerModify(customerVo);
 
 	}
 
