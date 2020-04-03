@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTDMapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bit.camp.com.model.dao.PaymentDao">
+
+	<select id="selectCustomerCount" resultType="int" parameterType="customer">
+		SELECT customerCount FROM customer WHERE CustomerID = #{customerID}
+	</select>
+	
+	<select id="selectRoomCount" resultType="int" parameterType="room">
+		SELECT roomCount FROM Room WHERE RoomTypeCount = #{roomTypeCount} 
+	</select>
+	
+	<select id="selectReservationCount" resultType="int">
+		SELECT reservationCount FROM reservation order by reservationCount DESC limit 1;
+	</select>
+	<delete id="deleteReservation">
+		DELETE FROM reservation WHERE
+		SSNumber=#{SSNumber} , RestvationStartDate=#{RestvationStartDate}
+	</delete>
+	
+	<insert id="insertReservation" parameterType="reservation">
+		INSERT INTO reservation (
+		reservationStartDate, reservationFinishDate, totalAmount, checkValue,customerCount, roomTypeCount
+		) VALUES ( #{reservationStartDate}, #{reservationFinishDate}, #{totalAmount}, #{checkValue}, #{customerCount}, #{roomTypeCount} )
+	</insert>
+	
+	<insert id="insertPaymentMethod" parameterType="paymentMethodTable">
+		INSERT INTO paymentmethod ( 
+		PaymentMethod , ReservationDate , imp_uid , merchant_uid , reservationCount
+		) VALUES ( #{paymentMethod}, #{reservationDate} , #{imp_uid}, #{merchant_uid},  #{reservationCount} )
+	</insert>
+</mapper>
