@@ -81,11 +81,11 @@
 				<li class="active"><a href="/index">Home</a></li>
 				<li><a href="/rooms">Rooms</a></li>
 				<li><a href="/about-us">About Us</a></li>
-				<li><a href="/pages">MyPages</a>
+				<li><a href="/myPage">MyPages</a>
 					<ul class="dropdown">
 						<li><a href="/room-details"></a></li>
-						<li><a href="#">예약확인</a></li>
-						<li><a href="#">개인정보수정</a></li>
+						<li><a href="/reservationConfirm">예약확인</a></li>
+						<li><a href="/customerModify">개인정보수정</a></li>
 					</ul></li>
 			</ul>
 		</nav>
@@ -149,10 +149,10 @@
 									<li class="active"><a href="/index">Home</a></li>
 									<li><a href="/rooms">Rooms</a></li>
 									<li><a href="/about-us">About Us</a></li>
-									<li><a href="/pages">MyPages</a>
+									<li><a href="/myPage">MyPages</a>
 										<ul class="dropdown">
-											<li><a href="/room-details">예약확인</a></li>
-											<li><a href="/blog-details">개인정보수정</a></li>
+											<li><a href="/reservationConfirm">예약확인</a></li>
+											<li><a href="/customerModify">개인정보수정</a></li>
 										</ul></li>
 
 								</ul>
