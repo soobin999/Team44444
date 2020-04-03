@@ -1,25 +1,21 @@
 package bit.camp.com.model.dao;
 
-/*import java.util.Date;*/
-import java.sql.Date;
 import java.util.List;
 
-import org.apache.ibatis.annotations.Param;
-
-import bit.camp.com.model.VO.mybatis.Room;
+import bit.camp.com.model.VO.room.RoomDTO;
 
 public interface RoomDAO {
 
-	List<Room> getAllRooms();
+	List<RoomDTO> getAllRooms();
 
-	List<Room> getAvailableStandart();
+	List<RoomDTO> getAvailableStandart();
 
-	List<Room> getAvailableDouble();
+	List<RoomDTO> getAvailableDouble();
 
-	List<Room> getAvailablePremium();
+	List<RoomDTO> getAvailablePremium();
 
-	List<Room> getAvailableFamily();
+	List<RoomDTO> getAvailableFamily();
 
-	List<Room> getAvailableSuite();
+	List<RoomDTO> getAvailableSuite();
 
 }

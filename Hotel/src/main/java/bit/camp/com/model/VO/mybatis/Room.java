@@ -16,6 +16,7 @@ public class Room {
 	public Room getRoom() {
 		return new Room();
 	}
+	
 	private int roomCount;
 	private int roomNumber, roomPrice, roomPerson;
 	private String roomPicture,roomInformation;
@@ -24,6 +25,7 @@ public class Room {
 	public Room() {
 		super();
 	}
+	
 	public Room(int roomCount,int roomNumber,int roomPrice,int roomPerson,String roomPicture,String roomInformation,boolean reservationState,RoomTypeTable roomTypeTable) {
 		super();
 		this.roomCount=roomCount;

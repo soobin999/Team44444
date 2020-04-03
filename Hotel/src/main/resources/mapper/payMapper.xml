@@ -21,7 +21,7 @@
 	<insert id="insertReservation" parameterType="reservation">
 		INSERT INTO reservation (
 		reservationStartDate, reservationFinishDate, totalAmount, checkValue,customerCount, roomTypeCount
-		) VALUES ( #{reservationStartDate}, #{reservationFinishDate}, #{totalAmount}, #{checkValue}, #{customerCount}, #{roomTypeCount} )
+		) VALUES ( #{reservationStartDate}, #{reservationFinishDate}, #{totalAmount}, #{checkValue}, #{customer.customerCount}, #{roomTypeCount} )
 	</insert>
 	
 	<insert id="insertPaymentMethod" parameterType="paymentMethodTable">
