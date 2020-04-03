@@ -62,7 +62,7 @@ public class PaymentController {
 		reservation.getRoom().getRoomTypeTable().setRoomTypeCount(paymentService.selectRoomTypeCount(reservation));
 		reservation.getRoom().setRoomCount(paymentService.selectRoom(reservation).get(paymentService.selectRoomCount(reservation))); 
 		paymentService.insertReservation(reservation);
-		payment.setReservationCount(paymentService.selectReservationCount());
+		payment.getReservation().setReservationCount(paymentService.selectReservationCount());
 		paymentService.insertPaymentMethod(payment);
 		return new Gson().toJson("성공");
 	}

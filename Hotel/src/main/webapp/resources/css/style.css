@@ -386,6 +386,9 @@ ul, ol {
 	position: relative;
 	z-index: 9;
 }
+.menu-item-manager {
+	background-color:#dfa974;
+}
 .menu-item .logo {
 	padding: 25px 0;
 }
