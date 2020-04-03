@@ -1,10 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
 Built-By: Acer
 Build-Jdk: 1.8.0_241
-=======
-Built-By: bitcamp
-Build-Jdk: 1.8.0_231
->>>>>>> 516b67d38077ddd6856c1a726fb74d2bb2af8eeb
 Created-By: Maven Integration for Eclipse
 
